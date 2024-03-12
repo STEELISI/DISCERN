@@ -4,6 +4,8 @@ This page describes how we install and use [BYOB](https://github.com/malwaredllc
 
 ## Prerequisites
 
+Clone this repository: https://github.com/briankoco/discern
+
 Run this script in your XDC:
 
 ```shell

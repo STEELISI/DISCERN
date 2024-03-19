@@ -110,7 +110,7 @@ shell 0
 You can verify the socket connection by typing `ls` at prompt in server to check.
 
 #### Test Files Creation
-For demo purposes I have made `test.txt`, `test_dir/` on `b1` node.
+For demo purposes I have created `test.txt`, `test_dir/` on `b1` node.
 
 ```shell
 rishitsaiya@b1:~$ ls

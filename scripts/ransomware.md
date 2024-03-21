@@ -1,4 +1,4 @@
-## Exfiltration Attack
+## Ransomware Attack
 The data is encrypted through a ransomware by botmaster (`botmaster` in our case) and the files can only be seen if decrypted from bot nodes (`b1` in our case).
 
 ### Connection with client

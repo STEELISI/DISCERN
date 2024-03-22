@@ -55,7 +55,7 @@ The output should look like this:
 .
 19652 INFO: Appending PKG archive to custom ELF section in EXE
 19714 INFO: Building EXE from EXE-00.toc completed successfully.
-(22,541,192 bytes saved to file: /opt/byob/byob/dist/jIJ)
+(22,541,192 bytes saved to file: /opt/byob/byob.git/dist/jIJ)
 ```
 
 We now scp this module to our home directory on the client (for example, `b1`):
@@ -115,7 +115,6 @@ For demo purposes I have created `test.txt`, `test_dir/` on `b1` node.
 ```shell
 rishitsaiya@b1:~$ ls
 jIJ test_dir test.txt
-
 rishitsaiya@b1:~$ cd test_dir/
 rishitsaiya@b1:~/test_dir$ ls
 test.txt
@@ -139,21 +138,21 @@ Upload complete
 It should look like this.
 
 #### Access Exfiltrated data at botmaster
-At the botmaster node, check the directory called `output`. There should files with encoded names in `output` directory.
+At the botmaster node, check the directory called `output`. There should be files with encoded names in `output` directory.
 
 ```shell
 rishitsaiya@botmaster:/opt/byob/byob$ cd output/
 rishitsaiya@botmaster:/opt/byob/byob/output$ ls
 8ky..txt  rha..zip
-rishitsaiya@botmaster:/opt/byob/byob-bcs/byob/output$ cat 8ky..txt 
+rishitsaiya@botmaster:/opt/byob/byob/output$ cat 8ky..txt 
 This is a test file.
-rishitsaiya@botmaster:/opt/byob/byob-bcs/byob/output$ unzip rha..zip 
+rishitsaiya@botmaster:/opt/byob/byob/output$ unzip rha..zip 
 Archive:  rha..zip
  extracting: test_dir/test.txt       
-rishitsaiya@botmaster:/opt/byob/byob-bcs/byob/output$ ls
+rishitsaiya@botmaster:/opt/byob/byob/output$ ls
 8ky..txt  rha..zip  test_dir
-rishitsaiya@botmaster:/opt/byob/byob-bcs/byob/output$ cd test_dir/
-rishitsaiya@botmaster:/opt/byob/byob-bcs/byob/output/test_dir$ cat test.txt 
+rishitsaiya@botmaster:/opt/byob/byob/output$ cd test_dir/
+rishitsaiya@botmaster:/opt/byob/byob/output/test_dir$ cat test.txt 
 This is a test file.
 ```
 

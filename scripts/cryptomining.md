@@ -211,8 +211,13 @@ The mining can be made to start through the `botmaster` node with byob through t
 ```shell
 miner run pool.hashvault.pro 80 42Mt2HmeN9SfMsMqidujg...u8D
 ```
-The mining starts here. 
+The mining starts here. The prompt on the botmaster node should look something like as follows:
+```shell
+[ 0 @ /home/rishitsaiya ]>miner run pool.hashvault.pro 80 42Mt2HmeN9SfMsMqidujg...u8D
 
+Miner running in <Miner name='Miner-1' pid=30535 parent=30302 started>
+```
+**Note:** You may not see some monero accumulating immediately in your wallet balance, because it takes a lot of time to actually mine and collect these type of cryptocurrency. You can also join different pools to see if they can be used to mine currency quicker.
 
 #### Appendix
 There is a backup of the `lmdb/` on the XDC. `lmdb` is the monero transaction ledger database which acts as a database storage for the fetched blockchain up until when it was copied. It can be treated a backup recovery point and then can start synchronization again to avoid fetching the whole blockchain again. 

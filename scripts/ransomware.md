@@ -128,6 +128,11 @@ We are using the keys generated from CryptoTools [https://cryptotools.net/rsagen
 
 Let us call the keys _pub_ & _priv_ for our case. 
 
+Usage line in `ransom.py` [here](https://github.com/STEELISI/DISCERN/blob/6d8fb527022693f06ef40d387ac0989e2c8f3456/byob/byob/modules/ransom.py#L63)
+```shell
+usage = 'ransom <encrypt/decrypt/payment> <file_name> [pub key] [priv key]'
+```
+
 A command should look like this
 ```
 ransom encrypt test.txt MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwr6x1f8XRzzi8Gvx8Uxys8Q/...IDAQAB MIIEpQIBAAKCAQEAwr6x1f8XRzzi8Gvx8Uxys8Q/...+kCUsXHpgh8oE=

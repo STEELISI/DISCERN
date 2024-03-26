@@ -7,7 +7,7 @@ This page describes how we install and use [BYOB](https://github.com/malwaredllc
 Run this script in your XDC:
 
 ```shell
-cd byob/
+cd testbed/
 sudo bash xdc/init-xdc-defaults.sh
 ```
 

@@ -4,13 +4,13 @@ This page describes how we install and use [BYOB](https://github.com/malwaredllc
 
 ## Prerequisites
 
-Clone this repository in your XDC: https://github.com/briankoco/discern <br>
-Latest changes with enhanced code on this repository: https://github.com/BlankCanvasStudio/byob
+<!-- Clone this repository in your XDC: https://github.com/briankoco/discern <br> -->
+Git Submodule Location: https://github.com/BlankCanvasStudio/byob
 
 Run this script in your XDC:
 
 ```shell
-cd byob/
+cd testbed/
 sudo bash xdc/init-xdc-defaults.sh
 ```
 

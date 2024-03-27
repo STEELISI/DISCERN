@@ -1,0 +1,49 @@
+Adapter# 1
+	Name ........... lo
+	Real name ...... lo
+	MAC address .... 0:0:0:0:0:0
+	IP address ..... X.Y.0.1
+	Network ........ X.Y.0.0
+	Netmask ........ X.Y.0.0
+Adapter# 2
+	Name ........... lo
+	Real name ...... lo
+	MAC address .... 0:0:0:0:0:0
+	IPv6 address ... ::1
+	IPv6 network ... ::1
+	IPv6 netmask ... ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
+Adapter# 3
+	Name ........... enp33s0f0np0
+	Real name ...... enp33s0f0np0
+	MAC address .... 8:c0:eb:ee:63:4e
+	IPv6 address ... fe80::ac0:ebff:feee:634e%4
+	IPv6 network ... fe80::%4
+	IPv6 netmask ... ffff:ffff:ffff:ffff::
+Adapter# 4
+	Name ........... enp65s0f0np0
+	Real name ...... enp65s0f0np0
+	MAC address .... 10:70:fd:57:e:14
+	IP address ..... X.Y.0.22
+	Network ........ X.Y.0.0
+	Netmask ........ X.Y.0.0
+Adapter# 5
+	Name ........... enp65s0f0np0
+	Real name ...... enp65s0f0np0
+	MAC address .... 10:70:fd:57:e:14
+	IPv6 address ... fe80::1270:fdff:fe57:e14%6
+	IPv6 network ... fe80::%6
+	IPv6 netmask ... ffff:ffff:ffff:ffff::
+Adapter# 6
+	Name ........... infranet
+	Real name ...... infranet
+	MAC address .... 10:70:fd:57:e:14
+	IP address ..... X.Y.0.11
+	Network ........ X.Y.0.0
+	Netmask ........ X.Y.0.0
+Adapter# 7
+	Name ........... infranet
+	Real name ...... infranet
+	MAC address .... 10:70:fd:57:e:14
+	IPv6 address ... fe80::1270:fdff:fe57:e14%8
+	IPv6 network ... fe80::%8
+	IPv6 netmask ... ffff:ffff:ffff:ffff::

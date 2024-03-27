@@ -1,0 +1,4 @@
+X.Y.0.15 dev infranet lladdr 82:dd:ac:ad:1a:d1 STALE
+X.Y.0.1 dev enp65s0f0np0 lladdr 26:3d:22:84:8b:ca STALE
+X.Y.0.1 dev infranet lladdr ea:11:d3:92:f2:9e REACHABLE
+fe80::1e34:daff:fecf:47a dev enp65s0f0np0  router FAILED

@@ -1,0 +1,117 @@
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 X.Y.0.0:5355            X.Y.0.0:*               LISTEN      2729/systemd-resolv 
+tcp        0      0 X.Y.0.53:53           X.Y.0.0:*               LISTEN      2729/systemd-resolv 
+tcp        0      0 X.Y.0.0:22              X.Y.0.0:*               LISTEN      3121/sshd: /usr/sbi 
+tcp        0      0 X.Y.0.0:8834            X.Y.0.0:*               LISTEN      36586/nessusd       
+tcp        0      0 X.Y.0.11:22          X.Y.254.2:38328     ESTABLISHED 23887/sshd: rishits 
+tcp        0      0 X.Y.0.11:22          X.Y.254.2:42724     ESTABLISHED 29584/sshd: rishits 
+tcp        0      0 X.Y.0.11:22          X.Y.254.2:59474     ESTABLISHED 23929/sshd: rishits 
+tcp6       0      0 :::5355                 :::*                    LISTEN      2729/systemd-resolv 
+tcp6       0      0 :::22                   :::*                    LISTEN      3121/sshd: /usr/sbi 
+tcp6       0      0 :::8834                 :::*                    LISTEN      36586/nessusd       
+udp        0      0 X.Y.0.53:53           X.Y.0.0:*                           2729/systemd-resolv 
+udp        0      0 X.Y.0.22:68          X.Y.0.0:*                           3420/systemd-networ 
+udp        0      0 X.Y.0.11:68          X.Y.0.0:*                           3420/systemd-networ 
+udp        0      0 X.Y.0.0:5355            X.Y.0.0:*                           2729/systemd-resolv 
+udp6       0      0 :::5355                 :::*                                2729/systemd-resolv 
+raw6       0      0 :::58                   :::*                    7           3420/systemd-networ 
+raw6       0      0 :::58                   :::*                    7           3420/systemd-networ 
+raw6       0      0 :::58                   :::*                    7           3420/systemd-networ 
+Active UNIX domain sockets (servers and established)
+Proto RefCnt Flags       Type       State         I-Node   PID/Program name     Path
+unix  2      [ ]         DGRAM                    695380   23890/systemd        /run/user/1001/systemd/notify
+unix  2      [ ACC ]     STREAM     LISTENING     695383   23890/systemd        /run/user/1001/systemd/private
+unix  2      [ ACC ]     STREAM     LISTENING     682768   23890/systemd        /run/user/1001/gnupg/S.dirmngr
+unix  2      [ ACC ]     STREAM     LISTENING     682770   23890/systemd        /run/user/1001/gnupg/S.gpg-agent.browser
+unix  2      [ ACC ]     STREAM     LISTENING     682772   23890/systemd        /run/user/1001/gnupg/S.gpg-agent.extra
+unix  2      [ ACC ]     STREAM     LISTENING     682774   23890/systemd        /run/user/1001/gnupg/S.gpg-agent.ssh
+unix  2      [ ACC ]     STREAM     LISTENING     682776   23890/systemd        /run/user/1001/gnupg/S.gpg-agent
+unix  3      [ ]         DGRAM                    191194   1/init               /run/systemd/notify
+unix  2      [ ACC ]     STREAM     LISTENING     191197   1/init               /run/systemd/private
+unix  2      [ ACC ]     STREAM     LISTENING     191199   1/init               /run/systemd/userdb/io.systemd.DynamicUser
+unix  2      [ ACC ]     STREAM     LISTENING     191200   1/init               /run/systemd/io.system.ManagedOOM
+unix  2      [ ]         DGRAM                    198661   1/init               /run/systemd/journal/syslog
+unix  2      [ ACC ]     STREAM     LISTENING     198663   1/init               /run/systemd/fsck.progress
+unix  10     [ ]         DGRAM                    198667   1/init               /run/systemd/journal/dev-log
+unix  9      [ ]         DGRAM                    198669   1/init               /run/systemd/journal/socket
+unix  2      [ ACC ]     STREAM     LISTENING     198671   1/init               /run/systemd/journal/stdout
+unix  2      [ ACC ]     SEQPACKET  LISTENING     198674   1/init               /run/udev/control
+unix  2      [ ACC ]     STREAM     LISTENING     71687    2239/systemd-journa  /run/systemd/journal/io.systemd.journal
+unix  2      [ ACC ]     STREAM     LISTENING     61473    2729/systemd-resolv  /run/systemd/resolve/io.systemd.Resolve
+unix  2      [ ACC ]     STREAM     LISTENING     202765   1/init               /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     56349    1/init               /run/systemd/journal/stdout
+unix  2      [ ]         DGRAM                    867409   36794/sudo           
+unix  3      [ ]         STREAM     CONNECTED     275473   2831/systemd-timesy  
+unix  3      [ ]         STREAM     CONNECTED     63497    1/init               /run/systemd/journal/stdout
+unix  3      [ ]         DGRAM                    74800    3420/systemd-networ  
+unix  3      [ ]         DGRAM                    191196   1/init               
+unix  2      [ ]         DGRAM                    71689    2239/systemd-journa  
+unix  3      [ ]         STREAM     CONNECTED     792880   36821/netstat        
+unix  3      [ ]         STREAM     CONNECTED     695351   23890/systemd        
+unix  2      [ ]         STREAM     CONNECTED     643234   23929/sshd: rishits  
+unix  3      [ ]         STREAM     CONNECTED     695385   23890/systemd        
+unix  3      [ ]         STREAM     CONNECTED     792879   36795/./nessuscli    
+unix  3      [ ]         DGRAM                    55332    2262/systemd-udevd   
+unix  2      [ ]         DGRAM                    75797    3092/dbus-daemon     
+unix  2      [ ]         DGRAM                    31877    3113/systemd-logind  
+unix  3      [ ]         DGRAM                    275467   2831/systemd-timesy  
+unix  3      [ ]         STREAM     CONNECTED     61476    2729/systemd-resolv  
+unix  3      [ ]         DGRAM                    74799    3420/systemd-networ  
+unix  3      [ ]         STREAM     CONNECTED     70718    2729/systemd-resolv  
+unix  3      [ ]         STREAM     CONNECTED     76826    3092/dbus-daemon     
+unix  3      [ ]         STREAM     CONNECTED     872244   1/init               /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     76828    3092/dbus-daemon     /run/dbus/system_bus_socket
+unix  2      [ ]         DGRAM                    55328    2262/systemd-udevd   
+unix  2      [ ]         DGRAM                    594496   29584/sshd: rishits  
+unix  2      [ ]         DGRAM                    695368   23890/systemd        
+unix  3      [ ]         STREAM     CONNECTED     74803    3420/systemd-networ  
+unix  2      [ ]         DGRAM                    277511   2729/systemd-resolv  
+unix  3      [ ]         STREAM     CONNECTED     198725   1/init               /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     544217   3092/dbus-daemon     /run/dbus/system_bus_socket
+unix  3      [ ]         DGRAM                    695382   23890/systemd        
+unix  2      [ ]         DGRAM                    695360   23891/(sd-pam)       
+unix  3      [ ]         DGRAM                    74802    3420/systemd-networ  
+unix  3      [ ]         STREAM     CONNECTED     682760   1/init               /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     31889    3113/systemd-logind  
+unix  3      [ ]         STREAM     CONNECTED     76829    3092/dbus-daemon     /run/dbus/system_bus_socket
+unix  3      [ ]         DGRAM                    55331    2262/systemd-udevd   
+unix  3      [ ]         DGRAM                    191195   1/init               
+unix  3      [ ]         STREAM     CONNECTED     215052   3092/dbus-daemon     /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     76832    3092/dbus-daemon     /run/dbus/system_bus_socket
+unix  2      [ ]         DGRAM                    163998   1/init               
+unix  3      [ ]         STREAM     CONNECTED     31860    3113/systemd-logind  
+unix  3      [ ]         STREAM     CONNECTED     55319    2262/systemd-udevd   
+unix  3      [ ]         DGRAM                    695381   23890/systemd        
+unix  3      [ ]         STREAM     CONNECTED     43165    1/init               /run/systemd/journal/stdout
+unix  3      [ ]         DGRAM                    275469   2831/systemd-timesy  
+unix  2      [ ]         DGRAM                    40273    3108/rsyslogd        
+unix  3      [ ]         DGRAM                    275466   2831/systemd-timesy  
+unix  3      [ ]         STREAM     CONNECTED     97703    36585/nessus-servic  
+unix  3      [ ]         DGRAM                    74801    3420/systemd-networ  
+unix  3      [ ]         STREAM     CONNECTED     76827    3092/dbus-daemon     
+unix  3      [ ]         DGRAM                    275468   2831/systemd-timesy  
+unix  2      [ ]         DGRAM                    74793    3420/systemd-networ  
+unix  2      [ ]         DGRAM                    275462   2831/systemd-timesy  
+unix  3      [ ]         STREAM     CONNECTED     74782    3420/systemd-networ  
+unix  3      [ ]         STREAM     CONNECTED     63498    1/init               /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     697824   23909/sshd: rishits  
+unix  3      [ ]         STREAM     CONNECTED     198747   2831/systemd-timesy  
+unix  3      [ ]         STREAM     CONNECTED     697843   23935/sshd: rishits  
+unix  2      [ ]         DGRAM                    590034   23887/sshd: rishits  
+unix  3      [ ]         STREAM     CONNECTED     697844   23929/sshd: rishits  
+unix  2      [ ]         STREAM     CONNECTED     653403   29584/sshd: rishits  
+unix  3      [ ]         STREAM     CONNECTED     815515   29584/sshd: rishits  
+unix  2      [ ]         STREAM     CONNECTED     557462   23887/sshd: rishits  
+unix  2      [ ]         DGRAM                    476973   23929/sshd: rishits  
+unix  3      [ ]         STREAM     CONNECTED     56360    1/init               /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     202774   1/init               
+unix  3      [ ]         STREAM     CONNECTED     76831    3092/dbus-daemon     /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     100361   3092/dbus-daemon     
+unix  3      [ ]         STREAM     CONNECTED     815514   29590/sshd: rishits  
+unix  3      [ ]         STREAM     CONNECTED     220165   1/init               /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     697825   23887/sshd: rishits  
+unix  3      [ ]         STREAM     CONNECTED     60427    3121/sshd: /usr/sbi  
+unix  3      [ ]         STREAM     CONNECTED     128007   3091/cron            
+unix  2      [ ]         DGRAM                    128008   3091/cron            
+unix  3      [ ]         STREAM     CONNECTED     220175   1/init               /run/systemd/journal/stdout

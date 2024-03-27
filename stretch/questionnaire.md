@@ -1,3 +1,10 @@
+We can do what-if scenarios with regard to different threats. SoC in a box, AI toolkit that will do automated security analysis.
+
+# Account management
+
+* Zero trust
+* Who has root access to what
+  
 # Network topology
 
 * Do you use private IPs?

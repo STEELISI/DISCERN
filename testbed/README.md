@@ -1,11 +1,8 @@
-# DISCERN
+# BYOB
 
 This page describes how we install and use [BYOB](https://github.com/malwaredllc/byob/)
 
 ## Prerequisites
-
-<!-- Clone this repository in your XDC: https://github.com/briankoco/discern <br> -->
-Git Submodule Location: https://github.com/BlankCanvasStudio/byob
 
 Run this script in your XDC:
 
@@ -23,7 +20,7 @@ Run this ansible playbook in your XDC to download and install BYOB. There are a 
 To run the playbook, do:
 ```shell
 cd ansible/
-ansible-playbook -i inventories/testbotenv.ini setup-testbotenv.yml
+ansible-playbook -i inventories/testbotenv.ini playbooks/setup-testbotenv.yml
 ```
 
 ## Example: Server/Client setup

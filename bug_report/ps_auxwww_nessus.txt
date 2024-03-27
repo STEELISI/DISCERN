@@ -1,0 +1,6 @@
+root       36585  0.0  0.0   5840  1572 ?        Ss   Mar25   0:00 /opt/nessus/sbin/nessus-service -q
+root       36586  0.3  0.0 249516 158012 ?       Sl   Mar25   2:07 nessusd -q
+root       36794  0.0  0.0  10780  5092 pts/0    S+   04:43   0:00 sudo ./nessuscli bug-report-generator
+root       36795  1.1  0.0 264532 21560 pts/0    Sl+  04:43   0:00 ./nessuscli bug-report-generator
+root       36828  0.0  0.0   2484   572 pts/0    S+   04:44   0:00 sh -c ps auxwww | grep nessus
+root       36830  0.0  0.0   6376  2332 pts/0    S+   04:44   0:00 grep nessus

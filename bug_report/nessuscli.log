@@ -1,0 +1,6 @@
+[26/Mar/2024:04:43:39 +0000] nessuscli invoked with: bug-report-generator
+[26/Mar/2024:04:44:05 +0000] nessuscli invoked with: fix --list
+[26/Mar/2024:04:44:05 +0000] nessuscli invoked with: fetch --scanner-health-stats
+[26/Mar/2024:04:44:06 +0000] nessuscli invoked with: fix --list-interfaces
+[26/Mar/2024:04:44:06 +0000] nessuscli invoked with: info --system-events
+[26/Mar/2024:04:44:06 +0000] No events data available!

@@ -1,0 +1,224 @@
+/opt/nessus/var/nessus/../..:
+total 24
+drwxr-xr-x 2 root root 4096 Mar 25 18:20 bin
+drwxr-xr-x 3 root root 4096 Mar 25 18:20 com
+drwxr-xr-x 3 root root 4096 Mar 25 18:20 etc
+drwxr-xr-x 3 root root 4096 Mar 25 18:20 lib
+drwxr-xr-x 2 root root 4096 Mar 26 04:44 sbin
+drwxr-xr-x 3 root root 4096 Mar 25 18:20 var
+
+/opt/nessus/var/nessus/../../bin:
+total 16736
+-rwxr-xr-x 1 root root 11595408 Feb 22 13:17 nasl
+-rwxr-xr-x 1 root root   214592 Feb 22 13:17 ndbg
+-rwxr-xr-x 1 root root  5321040 Feb 22 13:17 openssl
+
+/opt/nessus/var/nessus/../../com:
+total 4
+drwxr-xr-x 3 root root 4096 Mar 25 18:20 nessus
+
+/opt/nessus/var/nessus/../../com/nessus:
+total 4
+drwxr-xr-x 2 root root 4096 Mar 25 18:21 CA
+
+/opt/nessus/var/nessus/../../com/nessus/CA:
+total 8
+-rw-r--r-- 1 root root 1468 Mar 25 18:21 cacert.pem
+-rw-r--r-- 1 root root 1493 Mar 25 18:21 servercert.pem
+
+/opt/nessus/var/nessus/../../etc:
+total 4
+drwxr-xr-x 2 root root 4096 Mar 25 18:21 nessus
+
+/opt/nessus/var/nessus/../../etc/nessus:
+total 1096
+-rw-r--r-- 1 root root     351 Mar 25 18:20 fipsmodule.cnf
+-rw-r----- 1 root root    6567 Mar 25 18:21 nessusd.conf.imported
+-rw------- 1 root root   10240 Mar 25 18:21 nessusd.db
+-rw------- 1 root root       0 Mar 25 18:21 nessusd.db-journal
+-rw-r--r-- 1 root root     832 Mar 25 18:21 nessusd.rules
+-rw------- 1 root root    4096 Mar 26 02:28 nessus-fetch.db
+-rw------- 1 root root   32768 Mar 26 04:44 nessus-fetch.db-shm
+-rw------- 1 root root 1050128 Mar 26 04:44 nessus-fetch.db-wal
+
+/opt/nessus/var/nessus/../../lib:
+total 4
+drwxr-xr-x 3 root root 4096 Mar 25 18:20 nessus
+
+/opt/nessus/var/nessus/../../lib/nessus:
+total 11612
+-rw-r--r-- 1 root root 1758432 Feb 22 13:11 fips.so
+-rw-r--r-- 1 root root 4182240 Feb 22 13:11 legacy.so
+lrwxrwxrwx 1 root root      16 Feb 22 13:17 libjemalloc.so -> libjemalloc.so.2
+-rwxr-xr-x 1 root root 5917744 Feb 22 13:10 libjemalloc.so.2
+-rw-r--r-- 1 root root   17016 Feb 22 13:11 libnessus-glibc-fix.so
+drwxr-xr-x 2 root root    4096 Mar 25 18:21 plugins
+
+/opt/nessus/var/nessus/../../lib/nessus/plugins:
+total 1140
+-rw-r--r-- 1 root root  99346 Mar 25 18:20 bootstrap-essentials.nbin
+-rw-r--r-- 1 root root  66561 Mar 25 18:20 bootstrap-from-media.nbin
+-rw-r--r-- 1 root root  99340 Mar 25 18:20 bootstrap-pro-eval.nbin
+-rw-r--r-- 1 root root   1348 Mar 25 18:20 feed_metadata.json
+-rw-r--r-- 1 root root 888300 Feb 22 13:18 known_CA.inc
+
+/opt/nessus/var/nessus/../../sbin:
+total 23252
+-rwxr-xr-x 1 root root 11570824 Feb 22 13:17 nessuscli
+-rwxr-xr-x 1 root root 12104040 Feb 22 13:18 nessusd
+-rwxr-xr-x 1 root root    39456 Feb 22 13:17 nessus-service
+-rw------- 1 root root    89650 Mar 26 04:44 y
+
+/opt/nessus/var/nessus/../../var:
+total 4
+drwxr-xr-x 12 root root 4096 Mar 25 18:21 nessus
+
+/opt/nessus/var/nessus/../../var/nessus:
+total 48412
+-rw------- 1 root root     5120 Mar 25 18:21 agent-activity.db
+-rw-r--r-- 1 root root     2905 Mar 25 18:20 agent-plugins.json.config.install
+drwx------ 2 root root     4096 Mar 25 18:20 audits
+drwx------ 2 root root     4096 Mar 25 18:21 backups
+drwx------ 2 root root     4096 Mar 25 18:21 CA
+-rw------- 1 root root   372736 Mar 26 04:15 global.db
+-rw------- 1 root root    32768 Mar 26 04:44 global.db-shm
+-rw------- 1 root root  1049080 Mar 26 04:44 global.db-wal
+-rw-r--r-- 1 root root  5204400 Feb 22 13:10 icudt73l.dat
+-rw------- 1 root root      695 Mar 25 18:21 log.json
+drwxr-xr-x 2 root root     4096 Mar 26 04:43 logs
+-rw------- 1 root root     2048 Mar 25 18:21 master.key
+-rw------- 1 root root     3072 Mar 25 18:21 migrate.db
+-rw-r--r-- 1 root root        5 Mar 25 18:21 nessusd.pid
+-rw-r--r-- 1 root root      800 Feb 22 13:09 nessus_org.pem
+-rw-r--r-- 1 root root        5 Mar 25 18:21 nessus-service.pid
+-rw-r--r-- 1 root root   168336 Feb 22 13:09 nessus-services
+-rw-r--r-- 1 root root        7 Mar 25 18:21 nessus-service.version
+-rw------- 1 root root        6 Mar 25 18:21 nessus.version
+-rw-r--r-- 1 root root        0 Mar 25 18:21 plugin_feed_info.inc
+-rw------- 1 root root    99328 Mar 25 18:21 plugins-attributes.db
+-rw-r--r-- 1 root root       20 Mar 25 18:21 plugins-code.db
+-rw-r--r-- 1 root root       20 Mar 25 18:21 plugins-code.db.171139086611005992
+-rw-r--r-- 1 root root 42217869 Feb 22 13:18 plugins-core.tar.gz
+-rw-r--r-- 1 root root       20 Mar 25 18:21 plugins-desc.db
+-rw-r--r-- 1 root root       20 Mar 25 18:21 plugins-desc.db.1711390866248821047
+-rw-r--r-- 1 root root       20 Mar 25 18:21 plugins-lib.db
+-rw-r--r-- 1 root root       20 Mar 25 18:21 plugins-lib.db.17113908662041495279
+-rw------- 1 root root       10 Mar 25 18:21 plugins.schema
+-rw------- 1 root root     4096 Mar 25 18:21 plugins-severities.db
+-rw-r--r-- 1 root root   137418 Mar 25 18:21 services-tcp.db
+-rw-r--r-- 1 root root   130762 Mar 25 18:21 services-udp.db
+drwx------ 3 root root     4096 Mar 25 18:21 templates
+-rw-r--r-- 1 root root      800 Feb 22 13:09 tenable-plugins-a-20210201.pem
+-rw-r--r-- 1 root root      800 Feb 22 13:09 tenable-plugins-b-20210201.pem
+drwx------ 3 root root     4096 Mar 25 18:21 terrascan
+-rw------- 1 root root     5120 Mar 25 18:21 terrascan.db
+drwx------ 2 root root     4096 Mar 25 18:21 tmp
+drwxr-xr-x 2 root root     4096 Mar 25 18:20 tools
+-rw-r--r-- 1 root root       55 Mar 25 18:21 upgrades.db
+drwxr-xr-x 2 root root     4096 Feb 22 13:17 users
+-rw-r--r-- 1 root root       52 Mar 25 18:21 uuid
+drwx------ 3 root root     4096 Mar 25 18:21 www
+
+/opt/nessus/var/nessus/../../var/nessus/audits:
+total 322728
+-rw------- 1 root root 330473472 Mar 25 18:20 audit_warehouse.audit
+
+/opt/nessus/var/nessus/../../var/nessus/backups:
+total 300
+-rw------- 1 root root 305246 Mar 25 18:21 backup-2024-3-25.tar.gz
+
+/opt/nessus/var/nessus/../../var/nessus/CA:
+total 8
+-r-------- 1 root root 1704 Mar 25 18:21 cakey.pem
+-r-------- 1 root root 1704 Mar 25 18:21 serverkey.pem
+
+/opt/nessus/var/nessus/../../var/nessus/logs:
+total 20
+-rw------- 1 root root 7377 Mar 25 18:21 backend.log
+-rw------- 1 root root  424 Mar 26 04:44 nessuscli.log
+-rw------- 1 root root 1960 Mar 25 18:21 nessusd.dump
+-rw------- 1 root root 1498 Mar 25 18:21 nessusd.messages
+
+/opt/nessus/var/nessus/../../var/nessus/templates:
+total 1712
+-rw-r--r-- 1 root root    865 Mar 25 18:20 compliance.json
+-rw-r--r-- 1 root root 871040 Mar 25 18:20 credentials.json
+-rw-r--r-- 1 root root   7489 Mar 25 18:20 metadata.json
+-rw-r--r-- 1 root root 486002 Mar 25 18:20 policy_wizards.json
+-rw-r--r-- 1 root root    622 Mar 25 18:20 restrictions.json
+-rw-r--r-- 1 root root   4038 Mar 25 18:20 scap.json
+-rw-r--r-- 1 root root 257234 Mar 25 18:20 settings.json
+drwx------ 2 root root   4096 Mar 25 18:21 tmp
+-rw-r--r-- 1 root root 108320 Mar 25 18:20 tooltips.json
+
+/opt/nessus/var/nessus/../../var/nessus/templates/tmp:
+total 0
+
+/opt/nessus/var/nessus/../../var/nessus/terrascan:
+total 4
+drwx------ 2 root root 4096 Mar 25 18:21 policies
+
+/opt/nessus/var/nessus/../../var/nessus/terrascan/policies:
+total 0
+
+/opt/nessus/var/nessus/../../var/nessus/tmp:
+total 0
+
+/opt/nessus/var/nessus/../../var/nessus/tools:
+total 1612
+-rw-r--r-- 1 root root  66561 Feb 22 13:05 bootstrap-from-media.nbin
+-rw-r--r-- 1 root root 153604 Mar 25 18:20 downgrader.10.7.1.ntool
+-rw-r--r-- 1 root root 961448 Feb 22 13:05 nessusd_www_server6.nbin
+-rw-r--r-- 1 root root 459510 Feb 22 13:05 tool_dispatch.ntool
+
+/opt/nessus/var/nessus/../../var/nessus/users:
+total 0
+
+/opt/nessus/var/nessus/../../var/nessus/www:
+total 10804
+-rw-r--r-- 1 root root    1025 Mar 25 18:20 favicon.ico
+-rw-r--r-- 1 root root   19001 Mar 25 18:20 nessus6-api.css
+-rw-r--r-- 1 root root     491 Mar 25 18:20 nessus6-api.html
+-rw-r--r-- 1 root root  312239 Mar 25 18:20 nessus6-api.js
+-rw-r--r-- 1 root root  170272 Mar 25 18:20 nessus6-api-json.js
+-rw-r--r-- 1 root root  765581 Mar 25 18:20 nessus6.css
+-rw-r--r-- 1 root root  706148 Mar 25 18:20 nessus6-dark.css
+-rw------- 1 root root    1553 Mar 25 18:21 nessus6.html
+-rw------- 1 root root 3617918 Mar 25 18:21 nessus6.js
+-rw-r--r-- 1 root root    1200 Mar 25 18:20 nessus6-tmp.html
+-rw-r--r-- 1 root root 3617928 Mar 25 18:20 nessus6-tmp.js
+-rw-r--r-- 1 root root     253 Mar 25 18:20 nessus-email-icon-error.gif
+-rw-r--r-- 1 root root     253 Mar 25 18:20 nessus-email-icon-tips.gif
+-rw-r--r-- 1 root root   19412 Mar 25 18:20 nessus-email-logo-6.gif
+-rw-r--r-- 1 root root   83365 Mar 25 18:20 nessus-report-logo-6.png
+-rw-r--r-- 1 root root   33910 Mar 25 18:20 OpenSans-Bold.eot
+-rw-r--r-- 1 root root   33732 Mar 25 18:20 OpenSans-Bold.ttf
+-rw-r--r-- 1 root root   20676 Mar 25 18:20 OpenSans-Bold.woff
+-rw-r--r-- 1 root root   33202 Mar 25 18:20 OpenSans-Light.eot
+-rw-r--r-- 1 root root   33004 Mar 25 18:20 OpenSans-Light.ttf
+-rw-r--r-- 1 root root   20400 Mar 25 18:20 OpenSans-Light.woff
+-rw-r--r-- 1 root root   33602 Mar 25 18:20 OpenSans-Regular.eot
+-rw-r--r-- 1 root root   33428 Mar 25 18:20 OpenSans-Regular.ttf
+-rw-r--r-- 1 root root   20696 Mar 25 18:20 OpenSans-Regular.woff
+-rw-r--r-- 1 root root   33774 Mar 25 18:20 OpenSans-Semibold.eot
+-rw-r--r-- 1 root root   33564 Mar 25 18:20 OpenSans-Semibold.ttf
+-rw-r--r-- 1 root root   20796 Mar 25 18:20 OpenSans-Semibold.woff
+-rw-r--r-- 1 root root  469589 Mar 25 18:20 pendo-client.js
+-rw-r--r-- 1 root root       8 Mar 25 18:20 pendo-client.version
+-rw-r--r-- 1 root root   44167 Mar 25 18:20 report2fo6.xsl
+-rw-r--r-- 1 root root   38157 Mar 25 18:20 report2html6.xsl
+-rw-r--r-- 1 root root   44928 Mar 25 18:20 report2html_inline-css6.xsl
+-rw-r--r-- 1 root root   29360 Mar 25 18:20 tenable-fontawesome-ie.png
+-rw-r--r-- 1 root root   64960 Mar 25 18:20 tenable-fontawesome.png
+-rw-r--r-- 1 root root   14079 Mar 25 18:20 tenable-glyphicons-halflings-ie.png
+-rw-r--r-- 1 root root   29512 Mar 25 18:20 tenable-glyphicons-halflings.png
+-rw-r--r-- 1 root root   81282 Mar 25 18:20 tenable-glyphicons-ie.png
+-rw-r--r-- 1 root root  156868 Mar 25 18:20 tenable-glyphicons.png
+-rw------- 1 root root       0 Mar 25 18:21 tenable_links.css
+-rw-r--r-- 1 root root   13160 Mar 25 18:20 unsupported6.html
+-rw-r--r-- 1 root root   21074 Mar 25 18:20 welcome.html
+drwx------ 2 root root    4096 Mar 25 18:20 wizards
+-rw------- 1 root root  275506 Mar 25 18:21 wizard_templates.css
+
+/opt/nessus/var/nessus/../../var/nessus/www/wizards:
+total 0

@@ -9,5 +9,5 @@ modern cyberinfrastructure facilities.
   - Submodule pointing to the [DISCERN fork](https://github.com/STEELISI/byob) of the [BYOB project](https://byob.dev/)
 - [documentation/](./documentation)
   - Docs and scripts for DISCERN tools, datasets, and experiments
-- [testbed/(./testbed)
+- [testbed/](./testbed)
   - Docs and scripts to setup the BYOB test infrastructure on a Merge testbed

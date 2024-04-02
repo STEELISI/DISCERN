@@ -1,6 +1,6 @@
 # BYOB
 
-This page describes how we install and use [BYOB](https://github.com/malwaredllc/byob/)
+This page describes how we install and use [Build Your Own Botnet](https://github.com/STEELISI/byob/) on a Merge testbed
 
 ## Prerequisites
 

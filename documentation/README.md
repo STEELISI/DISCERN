@@ -1,4 +1,5 @@
 # Documentation
 
 ## Table of Contents
-- [Running BYOB modules](./byob)
+- [byob/](./byob)
+  - Documentation for various BYOB attack modules

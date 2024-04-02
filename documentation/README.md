@@ -1,4 +1,4 @@
 # Documentation
 
 ## Table of Contents
-[Running BYOB modules](./byob)
+- [Running BYOB modules](./byob)

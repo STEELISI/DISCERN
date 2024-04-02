@@ -5,5 +5,5 @@ modern cyberinfrastructure facilities.
 
 ## Table of Contents
 
-[BYOB](./byob)
-[Documentation](./documentation)
+- [BYOB](./byob)
+- [Documentation](./documentation)

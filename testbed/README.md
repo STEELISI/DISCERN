@@ -7,7 +7,6 @@ This page describes how we install and use [Build Your Own Botnet](https://githu
 Run this script in your XDC:
 
 ```shell
-cd testbed/
 sudo bash xdc/init-xdc-defaults.sh
 ```
 

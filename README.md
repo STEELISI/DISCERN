@@ -5,5 +5,7 @@ modern cyberinfrastructure facilities.
 
 ## Table of Contents
 
-- [BYOB](./byob)
+- byob/
+  - Submodule pointing to the [DISCERN fork](https://github.com/STEELISI/byob) of the [BYOB project](https://byob.dev/)
 - [Documentation](./documentation)
+  - Docs and scripts for DISCERN tools, datasets, and experiments

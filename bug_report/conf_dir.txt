@@ -1,9 +1,0 @@
-total 1096
--rw-r--r-- 1 root root     351 Mar 25 18:20 fipsmodule.cnf
--rw-r----- 1 root root    6567 Mar 25 18:21 nessusd.conf.imported
--rw------- 1 root root   10240 Mar 25 18:21 nessusd.db
--rw------- 1 root root       0 Mar 25 18:21 nessusd.db-journal
--rw-r--r-- 1 root root     832 Mar 25 18:21 nessusd.rules
--rw------- 1 root root    4096 Mar 26 02:28 nessus-fetch.db
--rw------- 1 root root   32768 Mar 26 04:44 nessus-fetch.db-shm
--rw------- 1 root root 1050128 Mar 26 04:44 nessus-fetch.db-wal

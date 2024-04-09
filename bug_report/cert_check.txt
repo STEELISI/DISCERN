@@ -1,1 +1,0 @@
-The server cert /opt/nessus/com/nessus/CA/servercert.pem is confirmed against CA cert /opt/nessus/com/nessus/CA/cacert.pem

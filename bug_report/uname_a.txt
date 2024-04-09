@@ -1,1 +1,0 @@
-Linux b1.infra.v2.testbotenv.discern 5.10.0-21-amd64 #1 SMP Debian 5.10.162-1 (2023-01-21) x86_64 GNU/Linux

@@ -1,3 +1,0 @@
-? (X.Y.0.15) at 82:dd:ac:ad:1a:d1 [ether] on infranet
-? (X.Y.0.1) at 26:3d:22:84:8b:ca [ether] on enp65s0f0np0
-? (X.Y.0.1) at ea:11:d3:92:f2:9e [ether] on infranet

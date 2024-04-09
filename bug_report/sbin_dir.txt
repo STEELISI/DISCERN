@@ -1,5 +1,0 @@
-total 23252
--rwxr-xr-x 1 root root 11570824 Feb 22 13:17 nessuscli
--rwxr-xr-x 1 root root 12104040 Feb 22 13:18 nessusd
--rwxr-xr-x 1 root root    39456 Feb 22 13:17 nessus-service
--rw------- 1 root root    89650 Mar 26 04:44 y

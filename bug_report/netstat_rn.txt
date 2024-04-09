@@ -1,9 +1,0 @@
-Kernel IP routing table
-Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
-X.Y.0.0         X.Y.0.1      X.Y.0.0         UG        0 0          0 infranet
-X.Y.0.0         X.Y.0.1      X.Y.0.0         UG        0 0          0 enp65s0f0np0
-X.Y.0.0      X.Y.0.0         X.Y.0.0     U         0 0          0 enp65s0f0np0
-X.Y.0.1      X.Y.0.0         X.Y.255.255 UH        0 0          0 enp65s0f0np0
-X.Y.0.0      X.Y.0.0         X.Y.0.0     U         0 0          0 infranet
-X.Y.0.1      X.Y.0.0         X.Y.255.255 UH        0 0          0 infranet
-X.Y.254.0   X.Y.0.1      X.Y.255.0   UG        0 0          0 infranet

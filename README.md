@@ -11,5 +11,3 @@ modern cyberinfrastructure facilities.
   - Docs and scripts for DISCERN tools, datasets, and experiments
 - [testbed/](./testbed)
   - Docs and scripts to setup the BYOB test infrastructure on a Merge testbed
-- [sensors/](./sensors)
-  - Sensors that monitor and log experiment activity on a Merge testbed

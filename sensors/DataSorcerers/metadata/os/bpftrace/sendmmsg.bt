@@ -1,0 +1,13 @@
+#!/bin/bpftrace
+
+tracepoint:syscalls:sys_enter_sendmmsg
+{
+    @[pid, uid, gid, args->fd, args->vlen] = count();
+}
+
+interval:s:60 { 
+    time();
+    print(@); 
+    clear(@); 
+}
+

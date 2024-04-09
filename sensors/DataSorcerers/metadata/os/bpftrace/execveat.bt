@@ -1,0 +1,18 @@
+#!/bin/bpftrace
+
+tracepoint:syscalls:sys_enter_execveat
+{
+    @[pid, str(args->filename), uid, gid, nsecs, "arg0"] = str(args->argv[0]);
+    @[pid, str(args->filename), uid, gid, nsecs, "arg1"] = str(args->argv[1]);
+    @[pid, str(args->filename), uid, gid, nsecs, "arg2"] = str(args->argv[2]);
+    @[pid, str(args->filename), uid, gid, nsecs, "arg3"] = str(args->argv[3]);
+    @[pid, str(args->filename), uid, gid, nsecs, "arg4"] = str(args->argv[4]);
+}
+
+
+interval:s:60 { 
+    time();
+    print(@); 
+    clear(@); 
+}
+

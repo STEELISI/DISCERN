@@ -1,0 +1,17 @@
+#!/bin/bpftrace
+
+// Some granularity on this is actually quite nice
+// Very accurate timestamps aren't necessary cause this signal doesn't 
+// happen all that much
+
+tracepoint:syscalls:sys_enter_kill
+{
+    @[pid, args->pid, uid, gid] = args->sig;
+}
+
+interval:s:60 { 
+    time();
+    print(@); 
+    clear(@); 
+}
+

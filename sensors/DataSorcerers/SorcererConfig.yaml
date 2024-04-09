@@ -1,0 +1,87 @@
+# For Logging info
+logfile: "/var/log/discern.log"
+
+# For gRPC Connection
+grpc_port: 50051
+gprc_ip: localhost
+grpc_proto: tcp
+maxrecvmsgsize: 10485760
+
+# Specify the tls settings
+tls: false
+certfile: ""
+keyfile: ""
+
+idapiurl: "http://localhost:50052/api/id"
+idapibody: ""
+runidapiserver: true
+
+
+# Specify which of the services you'd like to run
+runlog: true
+                                                    
+runansible: true
+runbash: true
+runjupyter: true
+                          
+runfile: true
+runid: true
+runidserver: true
+runnetwork: true
+runos: true
+
+
+osinfodumpinterval: 3001 #   interval is the conventient interval to dump to server. For data 
+
+# Specify directory where Sorcerer metadata/os saves its data
+osdatadir: "/tmp/discern/data/os"
+
+
+# Create a blacklist for metadata/file so that not all files are watched
+#   /home/.config, for example, creates a TON of temp files
+blacklistdirs: # These are regexes
+  - '/home/\..*/\.config'
+  - '/home/\..*/\..*'
+# Create a start point to do the file searches from. Not all files are 
+#   important so this limits the scope
+startingdirs: # These are regexes
+  - "/tmp"
+  - "/home"
+
+# How many packets should be bundled before they are sent to the Core server
+networkslicelength: 25
+
+# List of log files we'd like to record
+logsweepinterval: 5 # in seconds
+loglinescaptured: 25
+logfiles: # dmesg is implemented separately so don't worry
+  - "/var/log/messages"
+  - "/var/log/syslog"
+  - "/var/log/auth.log"
+  - "/var/log/daemon.log"
+  - "/var/log/kern.log"
+
+# List of directories we'd like to search to search for jupyter notes
+jupytersweepinterval: 50 # in seconds
+jupyterpaths:
+  - "/home"
+
+
+# Specify which of the services you want running and how often the
+#   Should be running
+
+# Ansible collection
+saveansibleconfigs: true
+saveansibleplaybooks: true
+ansibleconfigsweepinterval: 50 # in seconds
+ansibleplaybooksweepinterval: 50 # in seconds
+
+
+# Bash collection
+bashsweepinterval: 60 # How often this gets run
+
+
+# Identification information
+scrapeforusers: 30000 # in seconds
+scrapeinterfaceinfo: 300 # in seconds
+

@@ -1,0 +1,13 @@
+#!/bin/bpftrace
+
+tracepoint:syscalls:sys_enter_tkill
+{
+    @[pid, uid, gid, args->pid, args->sig] = count();
+}
+
+interval:s:60 { 
+    time();
+    print(@); 
+    clear(@); 
+}
+

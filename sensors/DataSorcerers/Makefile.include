@@ -1,0 +1,35 @@
+BLUE=\e[34m
+GREEN=\e[32m
+CYAN=\e[36m
+NORMAL=\e[39m
+
+define build-slug
+	@echo -e "$(BLUE)$1$(GREEN)\t $^$(CYAN)\t$@$(NORMAL)"
+endef
+
+define go-build
+	$(call build-slug,go)
+	$(QUIET) cd $1 && CGO_ENABLED=0 go build -o $2/$@ .
+endef
+
+define cgo-build
+	$(call build-slug,go)
+	$(QUIET) cd $1 && CGO_ENABLED=1 go build -o $2/$@ .
+endef
+
+
+define podman-build
+	$(call build-slug,podman)
+	podman build ${BUILD_ARGS} $(DOCKER_QUITE) -f $< -t $(@):$(TAG) .
+	$(if ${PUSH},$(call podman-push))
+endef
+
+define podman-push
+	$(call build-slug,push)
+	@podman push $(@):$(TAG)
+endef
+
+QUIET=@
+ifeq ($(V),1)
+	QUIET=
+endif

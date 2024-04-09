@@ -1,0 +1,12 @@
+[Unit]
+Description="The discern bash dumping to central server"
+
+[Service]
+User=root
+ExecStart="/usr/local/bin/discern-bash-sorcerer"
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
+

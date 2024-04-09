@@ -1,0 +1,13 @@
+#!/bin/bpftrace
+
+tracepoint:syscalls:sys_enter_close_range
+{
+    @[pid, uid, gid] = count();
+}
+
+interval:s:60 { 
+    time();
+    print(@); 
+    clear(@); 
+}
+

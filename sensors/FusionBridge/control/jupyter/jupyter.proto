@@ -1,0 +1,24 @@
+syntax = "proto3";
+option go_package = "FusionBridge/control/jupyter";
+
+import "google/protobuf/timestamp.proto";
+
+package jupyter;
+
+message Response {
+    int32 Type = 1;  // Any position number is an error
+    int32 SubmissionNumber = 2;
+}
+
+message IPYNB_Submission {
+    int32 SubmissionNumber = 1;
+    google.protobuf.Timestamp TimeStamp = 2; // A unix timestamp
+    string FileLocation = 3;
+    string FileContents = 4;
+    string DevID = 17;
+}
+
+service Jupyter {
+    rpc IngestIPYNB(IPYNB_Submission) returns (Response) {}
+}
+

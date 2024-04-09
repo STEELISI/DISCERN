@@ -1,0 +1,24 @@
+# For server logging
+logfile: "/var/log/discern.log"
+# For gRPC Connection
+grpc_port: 50051
+listenip: localhost
+listenproto: tcp
+# For Docker & inFlux connection
+internaldockerport: 8086
+externalport: 8086
+dburl: 'http://localhost'
+dbtoken: 'BIGElHSa291FOkrliGaBVc7ksnGgQ4vALbkfJzRuH02T2XB8qouH0H3IkYTJACE-XZ-QYV664CH5655LkbQDIQ::'
+startnewdockerinstance: true
+bucket_name: DISCERN
+org: ISI
+password: something
+username: default-user
+# For postgres connection
+externalpostgresport: 5432
+postgresdatamount: "/var/lib/postgresql/data"
+startnewpostgresinstance: true
+postgresuser: "postgres" # Also needs to be changed in docker file and rebuild /etc/discern/postgres/Dockerfile
+postgrespassword: "*Something*" # Also needs to be changed in docker file and rebuild /etc/discern/postgres/Dockerfile
+postgresip: "127.0.0.1"
+

@@ -1,0 +1,34 @@
+syntax = "proto3";
+option go_package = "FusionBridge/control/ansible";
+
+import "google/protobuf/timestamp.proto";
+
+package ansible;
+
+message ConfigDetails {
+    int32 SubmissionNumber = 1;
+    google.protobuf.Timestamp TimeStamp = 2; // A unix timestamp
+    string Location = 3;
+    string Content = 16;
+    string DevID = 17;
+}
+
+message PlaybookDetails {
+    int32 SubmissionNumber = 1;
+    google.protobuf.Timestamp TimeStamp = 2; // A unix timestamp
+    string Location = 3;
+    bool Verified = 4; // Is this definitely a playbook or are we assuming
+    string Content = 16;
+    string DevID = 17;
+}
+
+message AnsibleACK {
+    int32 SubmissionNumber = 1;
+    int32 Type = 2;
+}
+
+service Ansible {
+   rpc SaveAnsiblePlaybook(PlaybookDetails) returns (AnsibleACK) {}
+   rpc SaveAnsibleConfig(ConfigDetails) returns (AnsibleACK) {}
+}
+

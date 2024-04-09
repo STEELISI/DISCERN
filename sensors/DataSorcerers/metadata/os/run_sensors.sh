@@ -1,0 +1,21 @@
+#!/bin/bash
+sudo bpftrace -f json ./bpftrace/close.bt >> /tmp/discern/data/os/close-res.txt &
+sudo bpftrace -f json ./bpftrace/close_range.bt >> /tmp/discern/data/os/close_range-res.txt &
+sudo bpftrace -f json ./bpftrace/execve.bt >> /tmp/discern/data/os/execve-res.txt &
+sudo bpftrace -f json ./bpftrace/execveat.bt >> /tmp/discern/data/os/execveat-res.txt &
+sudo bpftrace -f json ./bpftrace/fork.bt >> /tmp/discern/data/os/fork-res.txt &
+sudo bpftrace -f json ./bpftrace/kill.bt >> /tmp/discern/data/os/kill-res.txt &
+sudo bpftrace -f json ./bpftrace/open.bt >> /tmp/discern/data/os/open-res.txt &
+sudo bpftrace -f json ./bpftrace/openat.bt >> /tmp/discern/data/os/openat-res.txt &
+sudo bpftrace -f json ./bpftrace/openat2.bt >> /tmp/discern/data/os/openat2-res.txt &
+sudo bpftrace -f json ./bpftrace/recvfrom.bt >> /tmp/discern/data/os/recvfrom-res.txt &
+sudo bpftrace -f json ./bpftrace/recvmmsg.bt >> /tmp/discern/data/os/recvmmsg-res.txt &
+sudo bpftrace -f json ./bpftrace/recvmsg.bt >> /tmp/discern/data/os/recvmsg-res.txt &
+sudo bpftrace -f json ./bpftrace/sendmmsg.bt >> /tmp/discern/data/os/sendmmsg-res.txt &
+sudo bpftrace -f json ./bpftrace/sendmsg.bt >> /tmp/discern/data/os/sendmsg-res.txt &
+sudo bpftrace -f json ./bpftrace/sendto.bt >> /tmp/discern/data/os/sendto-res.txt &
+sudo bpftrace -f json ./bpftrace/socket.bt >> /tmp/discern/data/os/socket-res.txt &
+sudo bpftrace -f json ./bpftrace/socketpair.bt >> /tmp/discern/data/os/socketpair-res.txt &
+sudo bpftrace -f json ./bpftrace/sysinfo.bt >> /tmp/discern/data/os/sysinfo-res.txt &
+sudo bpftrace -f json ./bpftrace/tkill.bt >> /tmp/discern/data/os/tkill-res.txt &
+sudo bpftrace -f json ./bpftrace/vfork.bt >> /tmp/discern/data/os/vfork-res.txt &

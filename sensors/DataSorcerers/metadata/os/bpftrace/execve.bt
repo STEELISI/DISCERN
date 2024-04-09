@@ -1,0 +1,20 @@
+#!/bin/bpftrace
+
+// const char *const * envp
+
+tracepoint:syscalls:sys_enter_execve
+{
+    @[pid, nsecs, uid, gid, "arg0"] = str(args->argv[0]);
+    @[pid, nsecs, uid, gid, "arg1"] = str(args->argv[1]);
+    @[pid, nsecs, uid, gid, "arg2"] = str(args->argv[2]);
+    @[pid, nsecs, uid, gid, "arg3"] = str(args->argv[3]);
+    @[pid, nsecs, uid, gid, "arg4"] = str(args->argv[4]);
+}
+
+
+interval:s:60 { 
+    time();
+    print(@); 
+    clear(@); 
+}
+

@@ -3,8 +3,7 @@ The data is exfiltrated from bot nodes (`b1` in our case) to botmaster (`botmast
 
 ### Connection with client
 
-We will use the `botmaster` node to generate a client. The client will have a ransomware
-module built into it.
+We will use the `botmaster` node to generate a client. The client will use a basic module built into it.
 
 SSH to the botmaster node from your XDC
 ```shell

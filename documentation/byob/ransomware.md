@@ -3,8 +3,7 @@ The data is encrypted through a ransomware by botmaster (`botmaster` in our case
 
 ### Connection with client
 
-We will use the `botmaster` node to generate a client. The client will have a ransomware
-module built into it.
+We will use the `botmaster` node to generate a client. The client will have a ransomware module built into it.
 
 SSH to the botmaster node from your XDC
 ```shell

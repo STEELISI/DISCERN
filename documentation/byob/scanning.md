@@ -108,3 +108,23 @@ shell 0
 You can verify the socket connection by typing `ls` at prompt in server to check.
 
 #### Installing Nmap tool and Nmap Python Library
+Install the Nmap and Nmap Python Library on `b1` node.
+
+```
+sudo apt-get install nmap
+pip install python-nmap
+```
+
+#### Begin the scanning
+On botmaster node where the server is running, type the command:
+
+```shell
+[ 0 @ /home/rishitsaiya ]>portscanner 172.30.0.11
+
+{"22": {"protocol": "ssh", "service": "", "state": "open"}}
+namp scan: {'tcp': {'method': 'connect', 'services': '22-500'}}
+csv data: host;hostname;hostname_type;protocol;port;name;state;product;extrainfo;reason;version;conf;cpe
+172.30.0.11;;;tcp;22;ssh;open;OpenSSH;protocol 2.0;syn-ack;8.4p1 Debian 5+deb11u3;10;cpe:/o:linux:linux_kernel
+```
+
+The IP can be checked from the MergeTB dashboard.

@@ -10,3 +10,5 @@ This directory provides scripts to execute BYOB modules on a Merge testbed
   - Data exfiltration module example
 - [ransomware.md](./ransomware.md)
   - Ransomware module example
+- [scanning.md](./scanning.md)
+  - Ransomware module example

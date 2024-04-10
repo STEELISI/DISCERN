@@ -1,10 +1,9 @@
 ## Mining Attack
-Botmaster (`botmaster` in our case) uses bot nodes (`b1` in our case)to mine Monero cryptocurrency. 
+Botmaster (`botmaster` in our case) uses bot nodes (`b1` in our case) to mine Monero cryptocurrency. 
 
 ### Connection with client
 
-We will use the `botmaster` node to generate a client. The client will have a ransomware
-module built into it.
+We will use the `botmaster` node to generate a client. The client will have a miner module built into it.
 
 SSH to the botmaster node from your XDC
 ```shell
@@ -33,8 +32,7 @@ The output should look like this:
 
 
 [>] Modules
-        Adding modules...  -[-] can't add module: 'exfiltrate' (does not exist)
-(4 modules added to client)
+        Adding modules...  -(5 modules added to client)
 
 [>] Imports
         Adding imports...-(32 imports from 4 modules)

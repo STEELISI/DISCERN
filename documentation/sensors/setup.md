@@ -3,6 +3,9 @@ This guide helps to setup the environment for infrastructure dependent sensors r
 
 ### Source Code
 The source code is placed at: https://gitlab.com/mergetb/tech/instrumentation
+The `.deb` can be fetched from: https://gitlab.com/groups/mergetb/tech/-/packages
+
+For our nodes (which are debian based), we can pull the images of latest `.deb` files and follow the following steps.
 
 ### Installation of DataSorcerers.deb on node
 

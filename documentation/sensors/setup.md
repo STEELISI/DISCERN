@@ -1,12 +1,11 @@
 ## MergeTB Testbed Instrumentation
-This guide helps to setup the environment for infrastructure dependent sensors responsible for data collection specific to attack scenarios.
+This guide sets up the sensors responsible for data collection on the merge testbed.
 
 ### Source Code
-The source code is placed at: https://gitlab.com/mergetb/tech/instrumentation <br>
+The source code is found at: https://gitlab.com/mergetb/tech/instrumentation <br>
 The `.deb` files can be fetched from: https://gitlab.com/groups/mergetb/tech/-/packages
 
-For our nodes (which are Debian based), we can pull the images of latest 2 `.deb` files named `DataSorcerers.deb` and `FusionCore.deb`. Then we follow the following steps.
-
+Our nodes (which are Debian based), pull the latest 2 `.deb` image files named `DataSorcerers.deb` and `FusionCore.deb`. Then we need to set up the environment.
 ### Installation of DataSorcerers.deb on node
 
 ```bash
@@ -16,13 +15,13 @@ sudo apt update
 sudo apt upgrade -y
 ```
 
-We install the `DataSorcerers.deb` by running the following command:
+We install the `DataSorcerers.deb` using the following command:
 
 ```bash
 sudo dpkg -i DataSorcerers.deb
 ```
 
-If the installation is encountering an error which states as follows:
+If encounter the following error:
 
 ```bash
 Selecting previously unselected package datasorcerers.
@@ -49,14 +48,14 @@ Errors were encountered while processing:
  datasorcerers
 ```
 
-Then, try to run the following commands:
+Then, try the following commands:
 
 ```bash
 sudo apt --fix-broken install
 sudo dpkg -i DataSorcerers.deb
 ```
 
-This should install `DataSorcerers.deb` and create the symbolic links.
+This should install `DataSorcerers.deb`, create the symbolic links, and install the system services.
 
 ### Installation of FusionCore.deb on node
 
@@ -66,7 +65,7 @@ We then install the `FusionCore.deb`
 sudo dpkg -i FusionCore.deb
 ```
 
-If the installation is encountering an error which states as follows:
+If you encounter the following error:
 
 ```bash
 Selecting previously unselected package fusioncore.
@@ -95,7 +94,7 @@ Errors were encountered while processing:
  fusioncore
 ```
 
-We need Docker for the FusionCore and hence, we run the following commands to avoid "Unmet Dependencies" error.
+We need to install Docker for the FusionCore. We can install docker with:
 
 ```bash
 sudo apt install apt-transport-https ca-certificates curl software-properties-common
@@ -105,4 +104,4 @@ sudo apt update
 sudo apt install docker-ce
 ```
 
-This should install `FusionCore.deb` and create the symbolic links.
+This should install `FusionCore.deb` and create the necessary systen elements.

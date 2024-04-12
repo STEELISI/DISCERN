@@ -2,10 +2,10 @@
 This guide helps to setup the environment for infrastructure dependent sensors responsible for data collection specific to attack scenarios.
 
 ### Source Code
-The source code is placed at: https://gitlab.com/mergetb/tech/instrumentation
-The `.deb` can be fetched from: https://gitlab.com/groups/mergetb/tech/-/packages
+The source code is placed at: https://gitlab.com/mergetb/tech/instrumentation <br>
+The `.deb` files can be fetched from: https://gitlab.com/groups/mergetb/tech/-/packages
 
-For our nodes (which are debian based), we can pull the images of latest `.deb` files and follow the following steps.
+For our nodes (which are Debian based), we can pull the images of latest 2 `.deb` files named `DataSorcerers.deb` and `FusionCore.deb`. Then we follow the following steps.
 
 ### Installation of DataSorcerers.deb on node
 

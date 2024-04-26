@@ -105,3 +105,64 @@ sudo apt install docker-ce
 ```
 
 This should install `FusionCore.deb` and create the necessary systen elements.
+
+### Pulling Docker images
+The docker images are to be pulled to the system via the container registry on GitLab. They can be done through the following commands:
+```
+sudo docker pull registry.gitlab.com/mergetb/tech/instrumentation/psql:latest
+sudo docker pull registry.gitlab.com/mergetb/tech/instrumentation/influx:latest
+```
+
+The output might look something like this:
+
+```bash
+latest: Pulling from mergetb/tech/instrumentation/psql
+b0a0cf830b12: Already exists 
+dda3d8fbd5ed: Pull complete 
+283a477db7bb: Pull complete 
+91d2729fa4d5: Pull complete 
+9739ced65621: Pull complete 
+ae3bb1b347a4: Pull complete 
+f8406d9c00ea: Pull complete 
+c199bff16b05: Pull complete 
+e0d55fdb4d15: Pull complete 
+c1cb13b19080: Pull complete 
+873532e5f8c7: Pull complete 
+050d9f8c3b1c: Pull complete 
+710e142705f8: Pull complete 
+cb628c265f09: Pull complete 
+6051daefefaf: Pull complete 
+825582430ab7: Pull complete 
+409e62461d94: Pull complete 
+c8644a76e024: Pull complete 
+Digest: sha256:e2a3154857cb670b26b20955ca76a3cdc85c6ca5f7235832e5475c9b123c1245
+Status: Downloaded newer image for registry.gitlab.com/mergetb/tech/instrumentation/psql:latest
+registry.gitlab.com/mergetb/tech/instrumentation/psql:latest
+
+.
+.
+.
+
+latest: Pulling from mergetb/tech/instrumentation/influx
+b0a0cf830b12: Pull complete 
+a0233282981d: Pull complete 
+02e83ee0e313: Pull complete 
+bbba555ac45c: Pull complete 
+19c0354213f2: Pull complete 
+6c251dc7077b: Pull complete 
+f5f2bb35f883: Pull complete 
+3820c759c3b6: Pull complete 
+9156434ddff3: Pull complete 
+04e86d74ecaf: Pull complete 
+Digest: sha256:5e66c8bb46853e1525c96b54df4fbd36ef67c3b29e9cefae1d0e526becb144cd
+Status: Downloaded newer image for registry.gitlab.com/mergetb/tech/instrumentation/influx:latest
+registry.gitlab.com/mergetb/tech/instrumentation/influx:latest
+```
+
+### Point Data Collection to FusionCore service
+Since the FusionCore service is running on `botmaster` in this case, we direct the configuration to the botmaster in our case. We change the line #6 at `/etc/discern/SorcererConfig.yaml` to:
+
+```
+gprc_ip: botmaster.infra
+```
+

@@ -1,5 +1,5 @@
 ## MergeTB Testbed Instrumentation
-This guide sets up the sensors responsible for data collection on the merge testbed.
+This guide sets up the sensors responsible for data collection on the MergeTB testbed.
 
 ### Source Code
 The source code is found at: https://gitlab.com/mergetb/tech/instrumentation <br>
@@ -108,7 +108,8 @@ This should install `FusionCore.deb` and create the necessary systen elements.
 
 ### Pulling Docker images
 The docker images are to be pulled to the system via the container registry on GitLab. They can be done through the following commands:
-```
+
+```bash
 sudo docker pull registry.gitlab.com/mergetb/tech/instrumentation/psql:latest
 sudo docker pull registry.gitlab.com/mergetb/tech/instrumentation/influx:latest
 ```
@@ -166,3 +167,24 @@ Since the FusionCore service is running on `botmaster` in this case, we direct t
 gprc_ip: botmaster.infra
 ```
 
+### Restart the FusionCore service
+Restart the FusionCore to initiate the `influx` and `psql` services by using the following command:
+
+```bash
+sudo systemctl restart FusionCore
+```
+
+In order to check if the services have been up, it can be done by checking the status through the command: `sudo docker ps`. The output is as follows:
+
+```bash
+CONTAINER ID   IMAGE                                                   COMMAND                  CREATED         STATUS                  PORTS                                       NAMES
+ce75a6a8f7df   influxdb                                                "/entrypoint.sh infl…"   5 seconds ago   Up Less than a second   0.0.0.0:8086->8086/tcp, :::8086->8086/tcp   influx
+d563a1ac0a9f   registry.gitlab.com/mergetb/tech/instrumentation/psql   "docker-entrypoint.s…"   20 hours ago    Up 20 hours             0.0.0.0:5432->5432/tcp, :::5432->5432/tcp   gifted_kalam
+```
+
+### Check the logs
+The log can be checked at the location of node where the FusionCore service is established (`botmaster` in our case). The log can be viewed at `/var/log/discern.log`. To keep the updated log running, the following command can be used:
+
+```bash
+tail -f discern.log
+```

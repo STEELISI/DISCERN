@@ -19,7 +19,7 @@ Run this ansible playbook in your XDC to download and install BYOB. There are a 
 To run the playbook, do:
 ```shell
 cd ansible/
-ansible-playbook -i inventories/testbotenv.ini playbooks/setup-testbotenv.yml
+ansible-playbook -i inventories/testbotenv.ini setup-testbotenv.yml
 ```
 
 ## Example: Server/Client setup

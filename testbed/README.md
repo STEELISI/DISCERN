@@ -12,7 +12,7 @@ sudo bash xdc/init-xdc-defaults.sh
 
 ## Installation
 
-Run this ansible playbook in your XDC to download and install BYOB. There are a few assumptions currently:
+Run this ansible playbook in **your XDC** to download and install BYOB. There are a few assumptions currently:
 1. You are using the `testbotenv` topology shown here: https://launch.mod.deterlab.net/project/discern/experiment/testbotenv
 2. You only want to install BYOB on the `botmaster` node
 

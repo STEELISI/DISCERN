@@ -21,7 +21,7 @@ the nation's cyberinfrastructure resources.
 
 - [BYOB](https://github.com/STEELISI/byob) - We use BYOB ("Build Your Own Botnet") to construct
   malicious experiments
-- [Instrumentation](https://gitlab.com/mergetb/tech/instrumentation") - We are building sensors into
+- [Instrumentation](https://gitlab.com/mergetb/tech/instrumentation) - We are building sensors into
   the Merge testbed platform, which powers the SPHERE research infrastructure. These tools capture
   network metadata, OS metadata, system logs, and user interface activities. Our tools are designed
   for Merge, but are general enough to be deployed on most computational platforms.

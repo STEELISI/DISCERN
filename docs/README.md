@@ -13,7 +13,7 @@ services in support of security and privacy research.  Our approach is to conduc
 style="color:green">controlled malicious activities</span> alongside legitimate activities from
 SPHERE users, and to produce datasets that capture those malicious and benign activities. Our goal
 is for these datasets to enable novel research into new defenses to better secure the nation's
-cyberinfrastructure resources.
+cyberinfrastructure.
 
 ## tools
 

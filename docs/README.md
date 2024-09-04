@@ -1,9 +1,10 @@
 ## discern
 
-Researchers across the US use cyberinfrastructuress to conduct experimental activities. The value
-that these infrastructures provide makes them _compelling targets for attackers_, who may wish to
-exfiltrate research data, ransom the infrastructure via encryption, or enlist resources into botnets
-to send spam, participate in DDOS, or perform cryptomining.
+Researchers across the US use <span style="color:green">cyberinfrastructures</span> to conduct
+experimental activities. The research value these infrastructures provide makes them compelling
+<span style="color:red">attack targets</span>; attackers may attempt to compromise the
+infrastructure and exfiltrate research data, deploy ransomware, or enlist resources into botnets to
+send spam, participate in DDOS, or perform cryptomining.
 
 The DISCERN project at the [USC Information Sciences Institute](https://isi.edu) is producing
 datasets to capture the behavior of such malicious activities on research cyberinfrastructure resources.
@@ -11,7 +12,7 @@ Our work focuses on [SPHERE testbed](https://sphere-project.net), a novel resear
 which provides resources and services in support of security and privacy research. Our approach is
 to conduct malicious activities on the infrastructure in a controlled fashion, alongside legitimate
 activities from SPHERE users, and to produce datasets that capture those malicious and benign
-activities. Our goal is that these datasets will enable research into new defenses to better
+activities. These datasets will enable research into new defenses to better
 secure the nation's cyberinfrastructure resources.
 
 ## tools

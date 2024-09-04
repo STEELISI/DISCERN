@@ -10,10 +10,10 @@ The DISCERN project at the [USC Information Sciences Institute](https://isi.edu)
 datasets to capture the behavior of such malicious activities.  Our work focuses on the [SPHERE
 testbed](https://sphere-project.net), a novel research infrastructure which provides resources and
 services in support of security and privacy research.  Our approach is to conduct <span
-style="color:green">controlled malicious activities</span> on the infrastructure in a controlled
-fashion, alongside legitimate activities from SPHERE users, and to produce datasets that capture
-those malicious and benign activities. Our goal is for these datasets to enable novel research into
-new defenses to better secure the nation's cyberinfrastructure resources.
+style="color:green">controlled malicious activities</span> alongside legitimate activities from
+SPHERE users, and to produce datasets that capture those malicious and benign activities. Our goal
+is for these datasets to enable novel research into new defenses to better secure the nation's
+cyberinfrastructure resources.
 
 ## tools
 

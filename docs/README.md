@@ -1,11 +1,9 @@
-## problem
+## discern
 
 Researchers across the US use cyberinfrastructuress to conduct experimental activities. The value
 that these infrastructures provide makes them _compelling targets for attackers_, who may wish to
 exfiltrate research data, ransom the infrastructure via encryption, or enlist resources into botnets
 to send spam, participate in DDOS, or perform cryptomining.
-
-## overview
 
 The DISCERN project at the [USC Information Sciences Institute](https://isi.edu) is producing
 datasets to capture the behavior of such malicious activities on research cyberinfrastructure resources.

@@ -13,9 +13,8 @@ Our work focuses on [SPHERE testbed](https://sphere-project.net), a novel resear
 which provides resources and services in support of security and privacy research. Our approach is
 to conduct malicious activities on the infrastructure in a controlled fashion, alongside legitimate
 activities from SPHERE users, and to produce datasets that capture those malicious and benign
-activities. Our goal is that these datasets provide visibility into how malicious activities play
-out on cyberinfrastructures, thereby enabling research into cyber defenses that can better secure
-the nation's cyberinfrastructure resources.
+activities. Our goal is that these datasets will enable research into new defenses to better
+secure the nation's cyberinfrastructure resources.
 
 ## tools
 
